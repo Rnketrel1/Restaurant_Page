@@ -1,0 +1,81 @@
+/* styles/menu.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e1f5fe; /* Light blue background */
+  color: #2e7d32; /* Dark green text */
+}
+
+header {
+  background: linear-gradient(90deg, #42a5f5, #2196f3); /* Gradient header */
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav button {
+  background-color: #388e3c; /* Green */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+nav button:hover {
+  background-color: #2e7d32; /* Darker green */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#content {
+  padding: 40px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#content h1 {
+  font-size: 3.5em;
+  margin: 20px 0;
+}
+
+ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 0;
+  margin: 20px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+li {
+  padding: 20px;
+  font-size: 1.5em;
+  margin: 10px 0;
+  background-color: #fff; /* White background for items */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
